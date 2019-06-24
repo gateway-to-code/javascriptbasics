@@ -12,7 +12,6 @@ fizzBuzz(20) //
 
 /*
 
-Create a function that 
 
 */ 
 
