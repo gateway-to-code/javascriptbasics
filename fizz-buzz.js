@@ -16,6 +16,8 @@ if the input is not a number.
 Input               Output
 fizzBuzz(7)         //"flat soda"
 fizzBuzz("hello")   // "please enter a number"
+
+Please write your code below
 */ 
 
 // create a function
