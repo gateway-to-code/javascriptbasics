@@ -18,3 +18,12 @@ fizzBuzz(7)         //"flat soda"
 fizzBuzz("hello")   // "please enter a number"
 */ 
 
+// create a function
+// that says fizz when it sees 45
+
+// f(x)=x*2
+
+function double(x){
+	document.write(2 * x);
+} 
+double(20);
