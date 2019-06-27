@@ -85,6 +85,22 @@ function orThis (val) {
 
 
 
+function whoYou (val){
+
+
+	if (val === "Carine") {
+		document.write ("How did you know");
+	} else if ( val === "danteh"){
+		document.write ("Is he not smart.");
+	} else {
+		document.write ("Does not exist");
+	}
+
+}
+
+
+
+
 
 
 
