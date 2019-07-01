@@ -9,6 +9,7 @@ fizzBuzz(45)      // "fizz"
 fizzBuzz(20)      // "buzz"
 fizzBuzz(15)      //"fizzbuzz"
 
+
 Extra Credit 
 your function should return "flat soda" if the input is not a number. Your function should return "please enter a number" 
 if the input is not a number.
@@ -29,3 +30,23 @@ function double(x){
 	document.write(2 * x);
 } 
 double(20);
+
+
+
+
+
+function fizzBuzz (num){
+	if ((num%3 === 0) && (num%5 !== 0) && (typeof num === 'number')) {
+		console.log ('fizz')
+	}else if ((num%5 === 0) && (num%3 !==0) && (typeof num === 'number')) {
+		console.log ('buzz')
+	}else if ((num%3 === 0) && (num%5 === 0) && (typeof num === 'number')) {
+		console.log ('fizzbuzz')
+	}else if ((num%3 !== 0) && (num%5 !== 0) && (typeof num === 'number')) {
+		console.log ('flat soda')
+	}else if (typeof num === 'string'){
+		console.log ('please enter a number')
+	}else {
+		console.log ('Are you stupid or something, ENTER A NUMBER DUMMY')
+	}
+}
