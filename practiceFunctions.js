@@ -101,6 +101,52 @@ function whoYou (val){
 
 
 
+//Create a function that returns even if the value is even and odd if the number is odd.
+
+//if value is even val%2 === 0 return even
+//if value is odd val%2 ===0 return odd
+
+// function evenOdd (val){
+// 	if (val%2 === 0){
+// 		document.write ("even")
+// 	}else{
+// 		document.write ("odd")
+// 	}
+// }
+
+
+
+
+
+
+function oddEven (numb){
+	if (typeof numb === 'number'){
+		if (numb%2 === 0){
+			console.log ("Even")
+		}else{
+			console.log ("Odd")
+		}
+	}else{
+		console.log ("Please enter a number")
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
