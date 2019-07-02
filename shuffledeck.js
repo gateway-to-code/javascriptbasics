@@ -10,7 +10,7 @@ shuffleDeck(deck)                           // []
 
 */ 
 
-function shuffleDeck(deck) {
+function shuffleDeck(cards) {
 	var tempCard, newCard;
 	for(var i=cards.length-1; i > 0; i--) {
 		newCard = Math.floor(Math.random()*(i + 1));
