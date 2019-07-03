@@ -23,3 +23,23 @@ You can save a value in a temporary place by creating a new variable to hold the
 
 */ 
 
+//develop a random number from num = 0; num <= array.length
+// what ever random number i find i will take the first array position and switch with that 
+//position number
+
+
+
+
+function shuffleDeck(cards) {
+	var placeholder;
+	var newposition;
+
+	for (var i=0; i<= cards.length; i++){
+		placeholder = cards[i];
+		newposition = Math.floor(Math.random()*(i + 1));
+		cards[i] = cards[newposition];
+		cards[newposition] = placeholder;
+	} 
+	return cards;
+}
+
