@@ -28,18 +28,19 @@ You can save a value in a temporary place by creating a new variable to hold the
 //position number
 
 
-
+var deck = [1,2,3,4,5,6,7,8,9,10] 
 
 function shuffleDeck(cards) {
-	var placeholder;
+	var tem;
 	var newposition;
 
 	for (var i=0; i<= cards.length; i++){
-		placeholder = cards[i];
+		tem = cards[i];
 		newposition = Math.floor(Math.random()*(i + 1));
 		cards[i] = cards[newposition];
-		cards[newposition] = placeholder;
+		cards[newposition] = tem;
 	} 
 	return cards;
 }
 
+shuffleDeck(deck)
