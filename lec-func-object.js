@@ -69,11 +69,30 @@ var modifyString = function(string, specialKeys) {
 
 }
 
+var data = {name: 'carine', age:12};
+
+var objLoop = function(obj) {
+	for(var el in obj) {
+		console.log('this is teh key:', el, ',this is the value:', obj[el]);
+	}
+}
+
 
 //create a function that removes every even character from a given string.
+//Join:
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 
 
+//create a function that takes an array of objects and returns a list of name from each object in the array
 
+//input          
+//nameList = [{name: 'carine', age:12}, {name: 'danteh', age: 5}]
+
+//output
+//['carine', 'danteh'];
+
+//push: 
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 
 
 
