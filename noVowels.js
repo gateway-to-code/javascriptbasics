@@ -15,5 +15,5 @@ hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_O
 // }
 
 function noVowels(stri){
-	return string - [aeiou]
+	return stri - ['a'eiou']
 }

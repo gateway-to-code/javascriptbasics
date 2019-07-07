@@ -83,10 +83,29 @@ var objLoop = function(obj) {
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 
 
+
+
+var even = function (char) {
+	var char1 = char;
+	for (var i=1; i<= char1.length; i++) {
+		if(char1[i]){
+			char1 = char1.split(char1[i]).join('');
+			console.log('Characters - evenChar:', char1);
+		}
+	}
+	return char1;
+}
+
+
+
+
+
+
+
 //create a function that takes an array of objects and returns a list of name from each object in the array
 
 //input          
-//nameList = [{name: 'carine', age:12}, {name: 'danteh', age: 5}]
+nameList = [{name: 'carine', age:12}, {name: 'danteh', age: 5}]
 
 //output
 //['carine', 'danteh'];
@@ -94,10 +113,18 @@ var objLoop = function(obj) {
 //push: 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 
+var arr = [];
 
+var list = function(lis){
+	for(var i=0; i<=lis.length; i++){
+		if(lis[i] && lis[i].name){
+			console.log('the Obj at i:' , lis[i]);
+			arr.push(lis[i].name);
+		}
+	}
 
-
-
+ return arr;
+}
 
 
 
