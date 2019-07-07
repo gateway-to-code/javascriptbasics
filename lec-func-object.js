@@ -136,6 +136,87 @@ hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_O
 
 
 
+/*
+Rock Paper Scissors
+
+5a. Write a function that determines the winning play in a game of
+rock, paper, scissors
+
+input
+playRps('rock', 'scissors');
+
+output
+'rock'
+
+input 
+playRps('scissors', 'paper');
+
+output
+'scissors'
+
+
+
+
+
+5b. Write a function that determines the name of a player in a 
+of rock paper scissors
+
+input
+var player1 = {
+	name: 'carine',
+	play: 'rock'
+}
+
+var player2 = {
+	name:'sunny',
+	play: 'scissors'
+}
+
+displayWinner(player1, player2);
+
+output
+'carine'
+
+
+
+
+
+5c. Write a function that returns all possible throws a player can make 
+in a 3 round game of rock paper scissors. 
+
+input
+rockPaperScissors()
+
+output
+[["rock", "rock", "rock"], ["rock", "rock", "paper"],
+    ["rock", "rock", "scissors"], ["rock", "paper", "rock"],
+             ...etc...
+     ]
+
+
+************Extra Credit***************
+
+Make your function return answers for any number of rounds
+
+input 
+rockPaperScissors(5)
+
+output
+[["rock", "rock", "rock", "paper", "scissors"], 
+	["rock", "rock", "paper", "rock", "scissors"],
+    ["rock", "rock", "scissors", "paper", "scissors"], 
+    ["rock", "paper", "rock", "paper", "scissors"],
+             ...etc...
+     ]
+
+
+
+
+
+
+
+
+
 
 
 
