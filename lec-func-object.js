@@ -78,7 +78,7 @@ var objLoop = function(obj) {
 }
 
 
-//create a function that removes every even character from a given string.
+//1. create a function that removes every even character from a given string.
 //Join:
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 
@@ -104,6 +104,10 @@ var even = function (char) {
 
 //create a function that takes an array of objects and returns a list of name from each object in the array
 
+
+//2. create a function that takes an array of objects and returns a list of name from each object in the array
+
+
 //input          
 nameList = [{name: 'carine', age:12}, {name: 'danteh', age: 5}]
 
@@ -123,8 +127,122 @@ var list = function(lis){
 		}
 	}
 
+
  return arr;
 }
+
+
+//3. Create a function that checks whether a given input is an array or an object.
+//if the input is an array return a new array that describes the type of value of each item 
+//if the input is an object return the value of each item in the object 
+
+//input 
+//var input = [5, 'carine', true, ['hello', 'its me'], {name: 'sunny', location: 'california'}]
+
+//output
+// ['number', 'string', 'boolean', 'object', 'object']
+
+//input 
+//var input2 = {name: 'aaron', age: 6, alive: true, mates: ['harry', 'sam', 'alex']}
+
+//hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
+
+
+
+
+
+/*
+4a. create a function that checks if a given input is an array or an object. 
+if its an array return "array", if its an object return 'object', if its neither return undefined;
+
+
+4b. use your object checker function to return the value if your object contains a specified key, 
+or check if the given input is an item in an array and return the index of the item. 
+
+hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+
+*/
+
+
+
+
+
+/*
+Rock Paper Scissors
+
+5a. Write a function that determines the winning play in a game of
+rock, paper, scissors
+
+input
+playRps('rock', 'scissors');
+
+output
+'rock'
+
+input 
+playRps('scissors', 'paper');
+
+output
+'scissors'
+
+
+
+
+
+5b. Write a function that determines the name of a player in a 
+of rock paper scissors
+
+input
+var player1 = {
+	name: 'carine',
+	play: 'rock'
+}
+
+var player2 = {
+	name:'sunny',
+	play: 'scissors'
+}
+
+displayWinner(player1, player2);
+
+output
+'carine'
+
+
+
+
+
+5c. Write a function that returns all possible throws a player can make 
+in a 3 round game of rock paper scissors. 
+
+input
+rockPaperScissors()
+
+output
+[["rock", "rock", "rock"], ["rock", "rock", "paper"],
+    ["rock", "rock", "scissors"], ["rock", "paper", "rock"],
+             ...etc...
+     ]
+
+
+************Extra Credit***************
+
+Make your function return answers for any number of rounds
+
+input 
+rockPaperScissors(5)
+
+output
+[["rock", "rock", "rock", "paper", "scissors"], 
+	["rock", "rock", "paper", "rock", "scissors"],
+    ["rock", "rock", "scissors", "paper", "scissors"], 
+    ["rock", "paper", "rock", "paper", "scissors"],
+             ...etc...
+     ]
+
+
+
+>>>>>>> 35b81db0d674610cc70d9e1ed1ab412d57c60903
 
 
 
