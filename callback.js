@@ -124,14 +124,13 @@ function newFunc(arr) {
 		return item%2
 	})
 }
-undefined
 newFunc(a);
 // output: [1, 0, 1, 0, 1]
 
 
 /*
 
-1. Given an array of numbers, write a function that filters out all even numbers;
+2. Given an array of numbers, write a function that filters out all even numbers;
  hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
 input 
