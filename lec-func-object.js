@@ -154,48 +154,15 @@ var list = function(lis){
 /*
 4a. create a function that checks if a given input is an array or an object. 
 if its an array return "array", if its an object return 'object', if its neither return undefined;
-*/
-var a;
-var func = function(check){
-	if(Array.isArray(check)){
-		console.log('This is an Array');
-		a = 'array';
-	}else if((check = typeof 'object') && (!Array.isArray(check))){
-		console.log('This is an Object');
-		a = 'object';
-	}else{
-		return;
-	}
-	return a;
-}
 
 
-
-
-
-/*
 4b. use your object checker function to return the value if your object contains a specified key, 
 or check if the given input is an item in an array and return the index of the item. 
 
 hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 
 */
-// var a;
-// var func = function(check, input){
-// 	if(Array.isArray(check)){
-// 		console.log('This is an Array');
-// 		a = 'array';
-// 		for(var i=0; i<check.length; i++){
-// 			if()
-// 		}
-// 	}else if((check = typeof 'object') && (!Array.isArray(check))){
-// 		console.log('This is an Object');
-// 		a = 'object';
-// 	}else{
-// 		return;
-// 	}
-// 	return a;
-// }
+
 
 
 
@@ -217,54 +184,11 @@ playRps('scissors', 'paper');
 
 output
 'scissors'
-*/
-// if a combination is ('rock', 'scissors') i want my output to be rock
-//
-
-// rock < paper,  scissors < rock,  paper < rock
-// we want the loop to check both value and the key in the object
-// if any player selects the correct key, and the other player would then select its value by default 
-
-//  if player1 enters rock, the answer is rock if player2 enters scissors, else the answer is paper
-//  if player1 enters scissor, the answer is scissors if player2 enters paper, else the answer is rock
-//  //  if player1 enters paper, the answer is paper if player2 enters rock, else the answer is scissors
-// var rules = [[rock, paper], [paper,scissors], [scissors, rock], [paper, rock] ] 
-
-// var game = {rock: 'scissors', paper: 'rock', scissors: 'scissors'};
-var people = {player1: 'Carine', player2: 'Danteh'}
-var win;
-var rockPaperScissors = function(player1, player2){
-	if(player1 == 'rock'){
-		if(player2 == 'scissors'){
-			win = 'rock';
-		}else if(player2 == 'paper'){
-			win = 'paper';
-		}
-	}else if(player1 == 'scissors'){
-		if(player2 == 'paper'){
-			win = 'scissors';
-		}else if(player2 == 'rock'){
-			win = 'rock';
-		}
-	}else if(player1 == 'paper'){
-		if(player2 == 'rock'){
-			win = 'paper';
-		}else if(player2 == 'scissors'){
-			win = 'scissors';
-		}
-	}else {
-		return 
-	}
-return win;
-}
 
 
 
 
 
-
-
-/*
 5b. Write a function that determines the name of a player in a 
 of rock paper scissors
 
@@ -315,9 +239,10 @@ output
     ["rock", "paper", "rock", "paper", "scissors"],
              ...etc...
      ]
-*/
 
 
+
+>>>>>>> 35b81db0d674610cc70d9e1ed1ab412d57c60903
 
 
 
