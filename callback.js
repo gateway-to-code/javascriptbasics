@@ -38,7 +38,7 @@ setTimeout(
 )
 
 setTimeout(function() {
-	console.log('I dont really have anythign to say')
+	console.log('I dont really have anything to say');
 }, 3000)
 /*
 For Each
@@ -51,11 +51,11 @@ someArray.forEach(callback(val, index, array));
 
 For each is a higher order function because it takes a callback as a parameter
 */
-var grades = [98, 71, 62, 45]
-var finalGrades = {}
+var grades = [98, 71, 62, 45];
+var finalGrades = {};
 grades.forEach(function(el, i, collection) {
 	finalGrades[i+1] = el +=5;
-	finalGrades['oldGrades'] = collection
+	finalGrades['oldGrades'] = collection;
 })
 
 
@@ -71,9 +71,9 @@ someArray.find(callback(val, index, array))
 */
 
 var highGrades = grades.find(function(el, i, collection) {
-	if(collection[i] === 2) {
-		return el > 71
-	}
+
+		return el > 71;
+
 })
 
 
@@ -124,7 +124,7 @@ function newFunc(arr) {
 		return item%2
 	})
 }
-undefined
+
 newFunc(a);
 // output: [1, 0, 1, 0, 1]
 

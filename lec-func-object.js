@@ -241,8 +241,66 @@ output
      ]
 
 
+     r, p, s 
+	
+	
 
->>>>>>> 35b81db0d674610cc70d9e1ed1ab412d57c60903
+
+
+     r, r, r
+
+     p, p, p 
+
+     s, s, s
+
+		
+	r, r , p
+
+	r, r, s
+
+	r, p, p
+
+
+	p
+
+	p
+
+	p
+
+	s
+
+	s
+
+	s
+
+*/
+
+
+function rockPaperScissors() {
+	var throws = ['rock', 'paper', 'scissors'];
+	var games= [];
+	var currentGame = []; 
+	var rounds = 2;
+
+	function run(rounds, currentGame) {
+		if(rounds === 0) {
+			games.push(currentGame)
+			return;
+
+		}
+
+		for (var i = 0; i < throws.length; i++) {
+			var play = throws[i];
+			console.log('what are th rounds', rounds, play)
+			currentGame.push(play);
+			
+		 	run(rounds--, currentGame);
+		}
+	}
+	run(rounds, currentGame);
+
+	return games;
+}
 
 
 
